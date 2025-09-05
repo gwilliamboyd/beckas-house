@@ -5,6 +5,7 @@
   height: 100px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .mainContainer {
@@ -12,11 +13,44 @@
   gap: 3em;
 }
 
-.navLinkMain a {
+.contactContainer {
+  display: flex;
+  align-items: inherit;
+  gap: 5em;
+}
+
+.contactLeft {
+  display: flex;
+  gap: 2em;
+}
+
+.navLinkMain a,
+.navLinkContact a {
   text-decoration: none;
   color: inherit;
   font-size: 28px;
 }
 
+.navLinkContact a {
+  font-size: 18px;
+}
+
 .navLinkMain a:hover {
+}
+
+.contactContainer {
+}
+
+.socials {
+  display: flex;
+  gap: 1em;
+}
+
+.socialIcon svg {
+  fill: var(--icon-fill, #000000);
+  transition: fill 0.3s ease;
+}
+
+.socialIcon:hover svg {
+  fill: #ffffff;
 }
