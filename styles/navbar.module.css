@@ -7,8 +7,16 @@
   align-items: center;
 }
 
+.mainContainer {
+  display: flex;
+  gap: 3em;
+}
+
 .navLinkMain a {
   text-decoration: none;
   color: inherit;
   font-size: 28px;
+}
+
+.navLinkMain a:hover {
 }
