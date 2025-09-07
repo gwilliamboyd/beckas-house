@@ -1,0 +1,25 @@
+.faqMaster {
+  padding: 3.75em 3em;
+  background-color: #253035;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.questionContainer {
+  display: flex;
+  gap: 3em;
+}
+
+.faqText {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* Green highlighted heading text */
+.headingHighlight {
+  color: #ffb3b0;
+  font-weight: 700;
+}
