@@ -41,16 +41,16 @@
   text-decoration: none;
   color: inherit;
   font-size: 24px;
+  transition: color 0.3s ease;
 }
 
 .navLinkContact a {
   font-size: 16px;
 }
 
-.navLinkMain a:hover {
-}
-
-.contactContainer {
+.navLinkMain a:hover,
+.navLinkContact a:hover {
+  color: #ffffff;
 }
 
 .socials {
