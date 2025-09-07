@@ -1,3 +1,19 @@
+.pageMaster {
+  width: 100%;
+  /* Causes hero to appear under nav logo */
+  z-index: 1;
+  min-height: 100vh;
+}
+
+.heroMaster {
+  height: 1171px;
+  background-image: url('/home-hero.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-bottom: 8px solid #78be99;
+}
+
+/* Donate button  */
 .ctaButton {
   text-decoration: none;
   background-color: #78be99;
