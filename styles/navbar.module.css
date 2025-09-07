@@ -5,7 +5,19 @@
   height: 100px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.innerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: space-around;
+  padding: 0 3em;
+}
+
+.logoImage {
+  margin-bottom: -20px;
 }
 
 .mainContainer {
@@ -28,11 +40,11 @@
 .navLinkContact a {
   text-decoration: none;
   color: inherit;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .navLinkContact a {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navLinkMain a:hover {
