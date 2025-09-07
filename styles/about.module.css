@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   /* gap: 3em; */
+  border-bottom: 8px solid #78be99;
 }
 
 .aboutHeading {
