@@ -1,0 +1,12 @@
+.aboutMaster {
+  background-color: #ffffff;
+  padding: 4.5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutHeading {
+  font-weight: 400;
+  font-size: 48px;
+}
