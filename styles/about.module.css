@@ -37,6 +37,12 @@
   gap: 1em;
 }
 
+/* sets 50/50 layout for text and image sections  */
+.aboutText,
+.aboutImageContainer {
+  width: 50%;
+}
+
 .aboutSubHeading {
   font-size: 28px;
 }
@@ -51,4 +57,14 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+.aboutImageContainer {
+  position: relative;
+  min-height: 450px;
+}
+
+.aboutImage {
+  height: 100%;
+  position: fixed;
 }

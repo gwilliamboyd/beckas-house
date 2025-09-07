@@ -44,13 +44,21 @@ const About = () => {
             </p>
           </div>
         </div>
-
-        <Image
-          src={'/about-us-1.png'}
-          width={640}
-          height={395}
-          alt='About Beckas House'
-        />
+        <div className={styles.aboutImageContainer}>
+          <Image
+            className={styles.aboutImage}
+            src={'/about-us-1.png'}
+            fill
+            sizes={'100vw'}
+            style={{
+              objectFit: 'cover',
+              backgroundPosition: 'center',
+            }}
+            //   width={640}
+            //   height={395}
+            alt='About Beckas House'
+          />
+        </div>
       </div>
       <div className={`${styles.aboutInfo} ${styles.aboutInfoRev}`}>
         <div className={styles.aboutText}>
@@ -106,13 +114,21 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        <Image
-          src={'/about-us-2.png'}
-          width={640}
-          height={751}
-          alt='About Beckas House'
-        />
+        <div className={styles.aboutImageContainer}>
+          <Image
+            className={styles.aboutImage}
+            src={'/about-us-2.png'}
+            fill
+            sizes={'100vw'}
+            style={{
+              objectFit: 'cover',
+              backgroundPosition: 'center',
+            }}
+            //   width={640}
+            //   height={751}
+            alt='About Beckas House'
+          />
+        </div>
       </div>
     </div>
   )
