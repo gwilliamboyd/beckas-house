@@ -4,9 +4,51 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* gap: 3em; */
 }
 
 .aboutHeading {
   font-weight: 400;
   font-size: 48px;
+  margin-bottom: 2em;
+}
+
+.aboutInfo {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+/* flips order of photo and text in second About segment */
+.aboutInfoRev {
+  flex-direction: row-reverse;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 3.75em 0;
+  gap: 3em;
+}
+
+.aboutTextSegment {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.aboutSubHeading {
+  font-size: 28px;
+}
+
+/* Green highlighted heading text */
+.headingHighlight {
+  color: #78be99;
+  font-weight: 700;
+}
+
+.aboutParagraph {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
