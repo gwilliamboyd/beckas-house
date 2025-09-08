@@ -1,9 +1,20 @@
 import Image from 'next/image'
+import styles from '@/styles/faq.module.css'
+import { Open_Sans } from 'next/font/google'
+import { Bodoni_Moda } from 'next/font/google'
+
+// Font imports
+const bodoni_moda = Bodoni_Moda({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
+
+const open_sans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 const Question = ({
-  styles,
-  bodoni_moda,
-  open_sans,
   imgSrc,
   headingA,
   headingHighlight,
@@ -17,7 +28,7 @@ const Question = ({
         src={imgSrc}
         width={558}
         height={272}
-        alt={altText}
+        alt={'Beckas House FAQ image'}
       />
       <div className={`${bodoni_moda.className} ${styles.faqText}`}>
         <h2 className={styles.faqHeading}>

@@ -23,3 +23,24 @@
   color: #ffb3b0;
   font-weight: 700;
 }
+
+.faqParagraph {
+  font-size: 18px;
+  line-height: 1.75em;
+}
+
+.faqEmParagraph {
+  font-weight: 700;
+}
+
+.faqEmHighlight {
+  color: #ffb3b0;
+}
+
+.faqImageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+}
