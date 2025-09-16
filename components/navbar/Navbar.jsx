@@ -4,19 +4,22 @@ import CTAButton from '../CTAButton'
 import SocialIcon from '../SocialIcon'
 import NavlinkContact from './nav-links/NavlinkContact'
 import NavlinkMain from './nav-links/NavlinkMain'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
     <nav className={`${styles.master}`}>
       <div className={styles.innerContainer}>
         <div className={styles.logoContainer}>
-          <Image
-            className={styles.logoImage}
-            src={'/beckas-house-logo.png'}
-            width={260}
-            height={120}
-            alt="Becka's House logo"
-          />
+          <Link href={'/'}>
+            <Image
+              className={styles.logoImage}
+              src={'/beckas-house-logo.png'}
+              width={260}
+              height={120}
+              alt="Becka's House logo"
+            />
+          </Link>
         </div>
         <div className={styles.mainContainer}>
           <NavlinkMain
