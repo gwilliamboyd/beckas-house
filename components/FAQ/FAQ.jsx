@@ -85,12 +85,14 @@ const FAQ = () => {
       />
       {/* Question format - italic bold <p> */}
       <div className={styles.questionContainer}>
-        <Image
-          src={'/faq-4.png'}
-          width={558}
-          height={272}
-          alt={'Beckas House FAQ image'}
-        />
+        <div className={styles.faqImageWrapper}>
+          <Image
+            src={'/faq-4.png'}
+            width={558}
+            height={272}
+            alt={'Beckas House FAQ image'}
+          />
+        </div>
         <div className={`${bodoni_moda.className} ${styles.faqText}`}>
           <h2 className={styles.faqHeading}>
             How were you able to establish Becka’s House and find your{' '}

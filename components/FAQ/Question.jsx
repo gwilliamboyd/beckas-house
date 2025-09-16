@@ -24,12 +24,18 @@ const Question = ({
 }) => {
   return (
     <div className={styles.questionContainer}>
-      <Image
-        src={imgSrc}
-        width={558}
-        height={272}
-        alt={'Beckas House FAQ image'}
-      />
+      <div className={styles.faqImageWrapper}>
+        <Image
+          src={imgSrc}
+          width={558}
+          height={272}
+          style={{
+            objectFit: 'cover',
+            objectPosition: 'center',
+          }}
+          alt={'Beckas House FAQ image'}
+        />
+      </div>
       <div className={`${bodoni_moda.className} ${styles.faqText}`}>
         <h2 className={styles.faqHeading}>
           {headingA}

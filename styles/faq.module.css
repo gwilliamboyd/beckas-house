@@ -43,4 +43,13 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1em;
+  min-width: 558px;
+}
+
+.faqImage {
+  background-position: center;
+  background-size: cover;
+  min-width: 558px;
+  width: 100%;
+  height: 272px;
 }
