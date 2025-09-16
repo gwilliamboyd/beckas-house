@@ -1,0 +1,24 @@
+.infoMaster {
+  padding: 4em 6em; /* 72x180px */
+  background-color: #253035;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.infoHeading {
+  font-size: 48px;
+  align-self: center;
+  margin-bottom: 2em;
+}
+
+.infoQuestionHeading {
+  font-weight: 700;
+}
+
+.infoQuestionParagraph {
+  font-weight: 400;
+}

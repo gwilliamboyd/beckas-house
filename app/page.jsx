@@ -1,6 +1,7 @@
 import About from '@/components/About'
 import FAQ from '@/components/FAQ/FAQ'
 import Hero from '@/components/Hero'
+import Info from '@/components/Info/Info'
 import styles from '@/styles/page.module.css'
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <About />
       <FAQ />
+      <Info />
     </main>
   )
 }
