@@ -1,7 +1,77 @@
 import styles from '@/styles/footer.module.css'
+import Image from 'next/image'
+import { Open_Sans } from 'next/font/google'
+import { Bodoni_Moda } from 'next/font/google'
+import NavlinkMain from '../navbar/nav-links/NavlinkMain'
+import SocialIcon from '../SocialIcon'
+
+const open_sans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
+
+const bodoni_moda = Bodoni_Moda({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 const Footer = () => {
-  return <footer className={styles.footerMaster}></footer>
+  return (
+    <footer className={styles.footerMaster}>
+      <div className={styles.footerWrapper}>
+        <div className={`${open_sans.className} ${styles.contactWrapper}`}>
+          <Image
+            src={'/beckas-house-logo.png'}
+            width={241}
+            height={111}
+            alt="Becka's House Logo"
+          />
+          <a
+            className={styles.contactText}
+            href='mailto:contact@beckashouse.com'>
+            contact@beckashouse.com
+          </a>
+          <a
+            className={styles.contactText}
+            href='tel:214-952-8865'>
+            214-952-8865
+          </a>
+        </div>
+        <div className={`${bodoni_moda.className} ${styles.linksWrapper}`}>
+          <NavlinkMain
+            styles={styles}
+            url={'#about-us'}
+            linkText={'About'}
+          />
+          <NavlinkMain
+            styles={styles}
+            url={'#faq'}
+            linkText={'FAQ'}
+          />
+          <NavlinkMain
+            styles={styles}
+            url={'/gallery'}
+            linkText={'Gallery'}
+          />
+        </div>
+        <div className={styles.socialsWrapper}>
+          <SocialIcon
+            styles={styles}
+            url={'https://www.instagram.com'}
+            fillColor={'#000000'}
+            site={'instagram'}
+          />
+          <SocialIcon
+            styles={styles}
+            url={'https://www.instagram.com'}
+            fillColor={'#000000'}
+            site={'instagram'}
+          />
+        </div>
+      </div>
+      <div className={styles.footerSocket}></div>
+    </footer>
+  )
 }
 
 export default Footer
