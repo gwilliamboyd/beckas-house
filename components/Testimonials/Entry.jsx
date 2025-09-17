@@ -6,8 +6,8 @@ const Entry = ({ index, review, name }) => {
     <div
       key={index}
       className={styles.entryWrapper}>
-      <h4 className={styles.entryReview}>{review}</h4>
-      <p className={styles.entryName}>{name}</p>
+      <p className={styles.entryReview}>{review}</p>
+      <h4 className={styles.entryName}>{name}</h4>
     </div>
   )
 }
