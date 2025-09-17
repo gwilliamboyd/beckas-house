@@ -1,0 +1,7 @@
+.footerMaster {
+  width: 100vw;
+  background-color: #ffb3b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
