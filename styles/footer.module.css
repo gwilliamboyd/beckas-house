@@ -8,10 +8,15 @@
   align-items: center;
 }
 
+.footerWrapper,
+.footerSocketWrapper {
+  width: 60%;
+}
+
 .footerWrapper {
   display: flex;
   align-items: center;
-  gap: 8em;
+  justify-content: space-between;
 }
 
 .contactWrapper {
@@ -68,4 +73,20 @@
 /* Social icons white on hover */
 .socialIcon:hover svg {
   fill: #ffffff;
+}
+
+.footerSocketMaster {
+  width: 100%;
+  padding: 2.2em 0;
+  background-color: #253035;
+  font-size: 12px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerSocketWrapper {
+  display: flex;
+  justify-content: space-between;
 }
