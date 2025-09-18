@@ -8,7 +8,8 @@ const CTAButton = ({ buttonText, url, fontSize }) => {
     <a
       className={`${open_sans.className} ${styles.ctaButton}`}
       href={url}
-      style={{ fontSize: fontSize }}>
+      style={{ fontSize: fontSize }}
+      target='_blank'>
       {buttonText}
     </a>
   )

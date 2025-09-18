@@ -42,24 +42,27 @@ const page = () => {
   return (
     <div className={styles.testimonialsMaster}>
       <div className={styles.testimonialsWrapper}>
-        {/* Previous testimonial */}
-        <FontAwesomeIcon
-          onClick={() => entryHandler('-')}
-          className={styles.chevronIcon}
-          icon={faChevronLeft}
-        />
-        {/* Entries section */}
-        <Testimonials
-          currentIndex={currentIndex}
-          setCurrentIndex={setCurrentIndex}
-          entries={entries}
-        />
-        {/* Next testimonial */}
-        <FontAwesomeIcon
-          onClick={() => entryHandler('+')}
-          className={styles.chevronIcon}
-          icon={faChevronRight}
-        />
+        <h1 className={styles.testimonialsHeader}>Testimonials</h1>
+        <div className={styles.testimonialsInnerWrapper}>
+          {/* Previous testimonial */}
+          <FontAwesomeIcon
+            onClick={() => entryHandler('-')}
+            className={styles.chevronIcon}
+            icon={faChevronLeft}
+          />
+          {/* Entries section */}
+          <Testimonials
+            currentIndex={currentIndex}
+            setCurrentIndex={setCurrentIndex}
+            entries={entries}
+          />
+          {/* Next testimonial */}
+          <FontAwesomeIcon
+            onClick={() => entryHandler('+')}
+            className={styles.chevronIcon}
+            icon={faChevronRight}
+          />
+        </div>
       </div>
     </div>
   )

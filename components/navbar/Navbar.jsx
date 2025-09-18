@@ -38,14 +38,14 @@ const Navbar = () => {
             />
             <NavlinkMain
               styles={styles}
-              url={'/testimonials'}
+              url={'/#'}
               linkText={'Testimonials'}
             />
           </div>
         </div>
         <CTAButton
           buttonText={'Donate Here'}
-          url={'#'}
+          url={'https://give.donationpay.org/charitysmith/bjbmemorialfund/'}
           fontSize={'20px'}
         />
         {/* <div className={styles.contactContainer}>

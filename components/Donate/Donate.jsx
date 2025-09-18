@@ -24,7 +24,7 @@ const Donate = () => {
         </div>
         <CTAButton
           buttonText={'Donate Here'}
-          url={'#'}
+          url={'https://give.donationpay.org/charitysmith/bjbmemorialfund/'}
           fontSize={'22px'}
         />
         <div
