@@ -32,9 +32,15 @@ const Navbar = () => {
             linkText={'FAQ'}
             url={'#faq'}
           />
+          <NavlinkMain
+            styles={styles}
+            url={'/gallery'}
+            linkText={'Gallery'}
+          />
           <CTAButton
             buttonText={'Donate'}
             url={'#'}
+            fontSize={'16px'}
           />
         </div>
         <div className={styles.contactContainer}>

@@ -1,4 +1,5 @@
 import About from '@/components/About'
+import Donate from '@/components/Donate/Donate'
 import FAQ from '@/components/FAQ/FAQ'
 import Hero from '@/components/Hero'
 import Info from '@/components/Info/Info'
@@ -11,6 +12,7 @@ export default function Home() {
       <About />
       <FAQ />
       <Info />
+      <Donate />
     </main>
   )
 }

@@ -16,6 +16,7 @@
 
 /* Donate button  */
 .ctaButton {
+  width: fit-content;
   text-decoration: none;
   background-color: #78be99;
   color: #ffffff;
