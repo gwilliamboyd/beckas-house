@@ -16,7 +16,9 @@ const open_sans = Open_Sans({
 
 const About = () => {
   return (
-    <div className={`${bodoni_moda.className} ${styles.aboutMaster}`}>
+    <div
+      id={'about-us'}
+      className={`${bodoni_moda.className} ${styles.aboutMaster}`}>
       <h1 className={styles.aboutHeading}>About Becka's House</h1>
       <div className={styles.aboutInfo}>
         <div className={styles.aboutText}>

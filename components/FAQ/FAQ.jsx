@@ -17,7 +17,9 @@ const open_sans = Open_Sans({
 
 const FAQ = () => {
   return (
-    <div className={styles.faqMaster}>
+    <div
+      id={'faq'}
+      className={styles.faqMaster}>
       <Question
         imgSrc={'/faq-1.png'}
         headingA={'What makes '}
