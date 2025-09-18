@@ -20,30 +20,35 @@ const Navbar = () => {
               alt="Becka's House logo"
             />
           </Link>
+          <div className={styles.mainContainer}>
+            <NavlinkMain
+              styles={styles}
+              linkText={'About Us'}
+              url={'#about-us'}
+            />
+            <NavlinkMain
+              styles={styles}
+              linkText={'FAQ'}
+              url={'#faq'}
+            />
+            <NavlinkMain
+              styles={styles}
+              url={'/gallery'}
+              linkText={'Gallery'}
+            />
+            <NavlinkMain
+              styles={styles}
+              url={'/testimonials'}
+              linkText={'Testimonials'}
+            />
+          </div>
         </div>
-        <div className={styles.mainContainer}>
-          <NavlinkMain
-            styles={styles}
-            linkText={'About Us'}
-            url={'#about-us'}
-          />
-          <NavlinkMain
-            styles={styles}
-            linkText={'FAQ'}
-            url={'#faq'}
-          />
-          <NavlinkMain
-            styles={styles}
-            url={'/gallery'}
-            linkText={'Gallery'}
-          />
-          <CTAButton
-            buttonText={'Donate'}
-            url={'#'}
-            fontSize={'16px'}
-          />
-        </div>
-        <div className={styles.contactContainer}>
+        <CTAButton
+          buttonText={'Donate Here'}
+          url={'#'}
+          fontSize={'20px'}
+        />
+        {/* <div className={styles.contactContainer}>
           <div className={styles.contactLeft}>
             <NavlinkContact
               styles={styles}
@@ -62,15 +67,17 @@ const Navbar = () => {
               url={'https://www.facebook.com'}
               fillColor={'#000000'}
               site={'facebook'}
+              dimensions={60}
             />
             <SocialIcon
               styles={styles}
               url={'https://www.instagram.com'}
               fillColor={'#000000'}
               site={'instagram'}
+              dimensions={60}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   )

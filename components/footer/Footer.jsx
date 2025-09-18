@@ -54,6 +54,11 @@ const Footer = () => {
               url={'/gallery'}
               linkText={'Gallery'}
             />
+            <NavlinkMain
+              styles={styles}
+              url={'/testimonials'}
+              linkText={'Testimonials'}
+            />
           </div>
           <div className={styles.socialsWrapper}>
             <SocialIcon
@@ -61,12 +66,14 @@ const Footer = () => {
               url={'https://www.facebook.com'}
               fillColor={'#000000'}
               site={'facebook'}
+              dimensions={60}
             />
             <SocialIcon
               styles={styles}
               url={'https://www.instagram.com'}
               fillColor={'#000000'}
               site={'instagram'}
+              dimensions={60}
             />
           </div>
         </div>
