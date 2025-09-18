@@ -59,9 +59,9 @@ const Navbar = () => {
           <div className={styles.socials}>
             <SocialIcon
               styles={styles}
-              url={'https://www.instagram.com'}
+              url={'https://www.facebook.com'}
               fillColor={'#000000'}
-              site={'instagram'}
+              site={'facebook'}
             />
             <SocialIcon
               styles={styles}
