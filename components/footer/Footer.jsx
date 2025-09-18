@@ -4,6 +4,7 @@ import { Open_Sans } from 'next/font/google'
 import { Bodoni_Moda } from 'next/font/google'
 import NavlinkMain from '../navbar/nav-links/NavlinkMain'
 import SocialIcon from '../SocialIcon'
+import CTAButton from '../CTAButton'
 
 const open_sans = Open_Sans({
   subsets: ['latin'],

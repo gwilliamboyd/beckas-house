@@ -26,4 +26,9 @@
   display: flex;
   align-items: center;
   vertical-align: middle;
+  transition: 0.3s ease background-color;
+}
+
+.ctaButton:hover {
+  background-color: #5a8f73;
 }
