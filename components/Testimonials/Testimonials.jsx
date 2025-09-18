@@ -1,11 +1,11 @@
 'use client'
 import styles from '@/styles/testimonials.module.css'
 import Entry from './Entry'
-import entries from './entries/entries.json'
+// import entries from './entries/entries.json'
 import { useState, useEffect } from 'react'
 
-const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+const Testimonials = ({ currentIndex, setCurrentIndex, entries }) => {
+  /* const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -13,16 +13,16 @@ const Testimonials = () => {
     }, 8000)
 
     return () => clearInterval(interval)
-  }, [entries.length])
+  }, [entries.length]) */
 
   return (
-    <div>
+    <>
       <Entry
         index={currentIndex}
         review={entries[currentIndex].review}
         name={entries[currentIndex].name}
       />
-    </div>
+    </>
   )
 }
 
