@@ -38,7 +38,7 @@ const Navbar = () => {
             />
             <NavlinkMain
               styles={styles}
-              url={'/#'}
+              url={'/testimonials'}
               linkText={'Testimonials'}
             />
           </div>

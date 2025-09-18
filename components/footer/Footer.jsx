@@ -57,7 +57,7 @@ const Footer = () => {
             />
             <NavlinkMain
               styles={styles}
-              url={'/#'}
+              url={'/testimonials'}
               linkText={'Testimonials'}
             />
           </div>
