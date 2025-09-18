@@ -5,6 +5,7 @@
   align-items: flex-start;
   padding: 3em 6em;
   color: #ffffff;
+  border-bottom: 8px solid #78be99;
 }
 
 .donateWrapper {
