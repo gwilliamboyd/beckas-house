@@ -50,7 +50,8 @@ const Donate = () => {
           </p>
           <a
             className={styles.donateLink}
-            href='https://give.donationpay.org/charitysmith/bjbmemorialfund/'>
+            href='https://give.donationpay.org/charitysmith/bjbmemorialfund/'
+            target='_blank'>
             Learn More
           </a>
         </div>
