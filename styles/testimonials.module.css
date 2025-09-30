@@ -43,3 +43,9 @@
   flex-direction: column;
   gap: 1em;
 }
+
+.entryDate {
+  font-weight: 800;
+  color: #333;
+  margin-top: -16px;
+}

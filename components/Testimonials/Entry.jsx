@@ -4,16 +4,17 @@ import { Open_Sans } from 'next/font/google'
 
 const open_sans = Open_Sans({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '700', '800'],
 })
 
-const Entry = ({ index, review, name }) => {
+const Entry = ({ index, review, name, date }) => {
   return (
     <div
       key={index}
       className={`${open_sans.className} ${styles.entryWrapper}`}>
       <p className={styles.entryReview}>{review}</p>
       <h4 className={styles.entryName}>{name}</h4>
+      <h5 className={styles.entryDate}>{date}</h5>
     </div>
   )
 }
