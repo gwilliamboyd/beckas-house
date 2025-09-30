@@ -30,7 +30,7 @@ const FAQ = () => {
         }
       />
       <Question
-        imgSrc={'/faq-2.png'}
+        imgSrc={'/2025-house-sisters.jpg'}
         headingA={'What is provided for the '}
         headingHighlight={'House Sisters'}
         headingB={'?'}
