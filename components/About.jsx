@@ -71,47 +71,64 @@ const About = () => {
             </h2>
             <div className={`${open_sans.className} ${styles.aboutParagraph}`}>
               <p>
-                At birth in 1997, Becka was diagnosed with intraventricular
-                hemorrhage resulting in porencephaly, an extremely rare
-                neurological disorder of the central nervous system
-                characterized by cysts or cavities within the cerebral
-                hemisphere. The doctors told Becka’s family that her prognosis
-                and development was yet to be determined. As an infant and
-                toddler, Becka was delayed in obtaining milestones. She was
-                diagnosed with Optic Nerve Atrophy, leaving her legally blind,
-                immune thrombocytopenia, and hemiparesis (cerebral palsy) which
-                affects her leg and arm on her left side. She was later
-                diagnosed with autism, cortical visual impairment (CVI), speech
-                impairment, auditory processing disorder and has a history of
-                seizures.
+                Becka was born in 1997 with a diagnosis of{' '}
+                <b>intraventricular hemorrhage</b>, which led to{' '}
+                <b>porencephaly</b>, a rare neurological disorder characterized
+                by cysts or cavities in the brain. Doctors explained that her
+                brain hadn’t fully developed and that her prognosis was
+                uncertain. Her family was simply told:{' '}
+                <em>
+                  take her home, love her, and care for her as you would any
+                  child.
+                </em>{' '}
+                So they did exactly that.
               </p>
               <p>
-                Because of her multiple disabilities and the success she had in
-                the EXIT program, Becka’s family knew it was important for Becka
-                to live in a safe, nurturing environment where she could be
-                supported and put forth the skills she mastered while utilizing
-                systems and routines developed specifically for her at TSBVI.
-                Along with her entire TSBVI support team, the family recognized
-                the hard work Becka did to achieve skills that allowed her to be
-                a valued classmate, dorm sister, student and friend to others.
-                Her family did not want Becka to lose the skills she worked so
-                hard to achieve as well as her sense of accomplishment she felt
-                by achieving every task (with support) that brings her so much
-                joy. Most importantly, they did not want Becka to lose her sense
-                of belonging through fostering genuine friendships and finding
-                compassionate caregivers and intervenors.
+                As an infant and toddler, Becka experienced significant
+                developmental delays. Over time, she was diagnosed with{' '}
+                <b>Optic Nerve Atrophy</b> (leaving her legally blind),{' '}
+                <b>immune thrombocytopenia (ITP)</b>, and <b>cerebral palsy</b>{' '}
+                affecting the left side of her body. Additional diagnoses
+                followed, including{' '}
+                <b>
+                  autism, cortical visual impairment (CVI), speech impairment,
+                  auditory processing disorder
+                </b>
+                , and a <b>seizure disorder</b>.
               </p>
               <p>
-                Her family looked far and wide to find such an environment, but
-                nothing existed. And when Becka’s family came to that
-                realization, they set out and created an environment where Becka
-                could live her most meaningful, purpose-filled life.  Becka’s
-                House has been operating successfully for over 5 years. Becka is
-                indeed living an abundant life because of her House Sisters and
-                the team of caregivers and intervenors lovingly known as ‘Team
-                Becka.’  Residents at Becka’s House are known as House Sisters.
-                Naturally, each House Sister has their own divine story of how
-                they found Becka’s House and soon thereafter became a resident.
+                Despite these challenges, and with the support of her family,
+                educators, therapists, and a community that believed in her,
+                Becka graduated high school in 2015. That same year, she was
+                accepted into the <b>EXIT Program</b> at the{' '}
+                <b>Texas School for the Blind and Visually Impaired (TSBVI)</b>,
+                a life-changing opportunity that helped her develop vital life
+                skills, build meaningful relationships, and gain confidence in
+                her supported independence.
+              </p>
+              <p>
+                Recognizing how much Becka had grown at TSBVI and the hard work
+                she did to develop skills, her family knew she needed a
+                supportive environment where she could continue to thrive,
+                maintain the routines that helped her succeed, and preserve the
+                friendships and sense of purpose she had found. But after an
+                extensive search, they realized that such a place simply didn’t
+                exist.
+              </p>
+              <p>So, they created it.</p>
+              <p>
+                In 2019, <b>Becka’s House</b> was founded. An intentional,
+                loving home designed to support individuals with complex
+                disabilities in living full, meaningful lives. For over six
+                years, Becka has flourished, surrounded by her{' '}
+                <b>House Sisters</b> and a devoted team of intervenors and
+                caregivers known as <b>Team Becka</b>.
+              </p>
+              <p>
+                Each resident of Becka’s House has her own unique journey, but
+                they all share a common thread: the belief that everyone
+                deserves to live with dignity, purpose, and joy. At Becka’s
+                House, that belief is lived out every single day.
               </p>
             </div>
           </div>
