@@ -32,3 +32,11 @@
 .ctaButton:hover {
   background-color: #5a8f73;
 }
+
+/* Laptop - Small */
+@media (max-width: 1440px) {
+  .ctaButton {
+    padding: 0.33em 1em;
+    font-size: 18px;
+  }
+}

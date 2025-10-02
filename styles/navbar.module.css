@@ -109,3 +109,23 @@
 .socketWrapper .socialIcon:hover svg {
   fill: #ffb3b0;
 }
+
+/* Laptop - small */
+@media (max-width: 1440px) {
+  .innerContainer,
+  .socketMaster {
+    padding: 0 4em;
+  }
+
+  .logoContainer {
+    gap: 3em;
+  }
+}
+
+/* Tablet - portrait */
+@media (max-width: 1025px) {
+  .innerContainer,
+  .socketMaster {
+    padding: 0 2em;
+  }
+}
