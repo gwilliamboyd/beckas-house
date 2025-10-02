@@ -23,6 +23,16 @@ const Navbar = () => {
           <div className={styles.mainContainer}>
             <NavlinkMain
               styles={styles}
+              url={'/#about-us'}
+              linkText={'About Us'}
+            />
+            <NavlinkMain
+              styles={styles}
+              url={'/#faq'}
+              linkText={'FAQ'}
+            />
+            <NavlinkMain
+              styles={styles}
               url={'/gallery'}
               linkText={'Gallery'}
             />
