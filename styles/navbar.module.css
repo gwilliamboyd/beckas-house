@@ -110,6 +110,10 @@
   fill: #ffb3b0;
 }
 
+.mobileMenuIcon {
+  font-size: 30px;
+}
+
 /* Laptop - small */
 @media (max-width: 1440px) {
   .innerContainer,
@@ -127,5 +131,8 @@
   .innerContainer,
   .socketMaster {
     padding: 0 2em;
+  }
+  .mainContainer {
+    display: none;
   }
 }

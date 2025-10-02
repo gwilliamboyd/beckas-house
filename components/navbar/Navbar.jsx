@@ -1,12 +1,31 @@
+'use client'
 import Image from 'next/image'
 import styles from '../../styles/navbar.module.css'
 import CTAButton from '../CTAButton'
-import SocialIcon from '../SocialIcon'
-import NavlinkContact from './nav-links/NavlinkContact'
 import NavlinkMain from './nav-links/NavlinkMain'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1025) // pick your breakpoint
+    }
+
+    // Run once on mount to set initial state
+    handleResize()
+
+    // Attach listener
+    window.addEventListener('resize', handleResize)
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
     <nav className={`${styles.master}`}>
       <div className={styles.innerContainer}>
@@ -20,64 +39,44 @@ const Navbar = () => {
               alt="Becka's House logo"
             />
           </Link>
-          <div className={styles.mainContainer}>
-            <NavlinkMain
-              styles={styles}
-              url={'/#about-us'}
-              linkText={'About Us'}
-            />
-            <NavlinkMain
-              styles={styles}
-              url={'/#faq'}
-              linkText={'FAQ'}
-            />
-            <NavlinkMain
-              styles={styles}
-              url={'/gallery'}
-              linkText={'Gallery'}
-            />
-            <NavlinkMain
-              styles={styles}
-              url={'/testimonials'}
-              linkText={'Testimonials'}
-            />
-          </div>
+          {isMobile ? null : (
+            <div className={styles.mainContainer}>
+              <NavlinkMain
+                styles={styles}
+                url={'/#about-us'}
+                linkText={'About Us'}
+              />
+              <NavlinkMain
+                styles={styles}
+                url={'/#faq'}
+                linkText={'FAQ'}
+              />
+              <NavlinkMain
+                styles={styles}
+                url={'/gallery'}
+                linkText={'Gallery'}
+              />
+              <NavlinkMain
+                styles={styles}
+                url={'/testimonials'}
+                linkText={'Testimonials'}
+              />
+            </div>
+          )}
         </div>
-        <CTAButton
-          buttonText={'Donate Here'}
-          url={'https://give.donationpay.org/charitysmith/bjbmemorialfund/'}
-          fontSize={'20px'}
-        />
-        {/* <div className={styles.contactContainer}>
-          <div className={styles.contactLeft}>
-            <NavlinkContact
-              styles={styles}
-              linkText={'214-952-8865'}
-              url={'tel:2149528865'}
-            />
-            <NavlinkContact
-              styles={styles}
-              linkText={'contact@beckashouse.com'}
-              url={'mailto:contact@beckashouse.com'}
-            />
-          </div>
-          <div className={styles.socials}>
-            <SocialIcon
-              styles={styles}
-              url={'https://www.facebook.com'}
-              fillColor={'#000000'}
-              site={'facebook'}
-              dimensions={60}
-            />
-            <SocialIcon
-              styles={styles}
-              url={'https://www.instagram.com'}
-              fillColor={'#000000'}
-              site={'instagram'}
-              dimensions={60}
-            />
-          </div>
-        </div> */}
+        {isMobile ? null : (
+          <CTAButton
+            buttonText={'Donate Here'}
+            url={'https://give.donationpay.org/charitysmith/bjbmemorialfund/'}
+            fontSize={'20px'}
+          />
+        )}
+        {isMobile && (
+          <FontAwesomeIcon
+            className={styles.mobileMenuIcon}
+            icon={faBars}
+          />
+        )}
       </div>
     </nav>
   )
