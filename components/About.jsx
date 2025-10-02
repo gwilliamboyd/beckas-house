@@ -80,16 +80,16 @@ const About = () => {
                 <em>
                   take her home, love her, and care for her as you would any
                   child.
-                </em>{' '}
-                So they did exactly that.
+                </em>
               </p>
+              <p>So, they did exactly that.</p>
               <p>
                 As an infant and toddler, Becka experienced significant
                 developmental delays. Over time, she was diagnosed with{' '}
                 <b>Optic Nerve Atrophy</b> (leaving her legally blind),{' '}
                 <b>immune thrombocytopenia (ITP)</b>, and <b>cerebral palsy</b>{' '}
                 affecting the left side of her body. Additional diagnoses
-                followed, including{' '}
+                followed, including
                 <b>
                   autism, cortical visual impairment (CVI), speech impairment,
                   auditory processing disorder
@@ -102,9 +102,10 @@ const About = () => {
                 Becka graduated high school in 2015. That same year, she was
                 accepted into the <b>EXIT Program</b> at the{' '}
                 <b>Texas School for the Blind and Visually Impaired (TSBVI)</b>,
-                a life-changing opportunity that helped her develop vital life
-                skills, build meaningful relationships, and gain confidence in
-                her supported independence.
+                a life-changing opportunity in Austin where Becka lived in a
+                dorm that helped her develop vital life skills, build meaningful
+                relationships, and gain confidence in her supported
+                independence.
               </p>
               <p>
                 Recognizing how much Becka had grown at TSBVI and the hard work
