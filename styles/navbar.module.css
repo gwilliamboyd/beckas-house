@@ -127,7 +127,7 @@
 }
 
 /* Tablet - portrait */
-@media (max-width: 1025px) {
+@media (max-width: 1150px) {
   .innerContainer,
   .socketMaster {
     padding: 0 2em;

@@ -13,7 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1025) // pick your breakpoint
+      setIsMobile(window.innerWidth < 1150) // pick your breakpoint
     }
 
     // Run once on mount to set initial state
