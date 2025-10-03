@@ -6,11 +6,20 @@ import NavlinkMain from './nav-links/NavlinkMain'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faL } from '@fortawesome/free-solid-svg-icons'
 import useIsMobile from '@/hooks/useIsMobile'
 
 const Navbar = () => {
   const isMobile = useIsMobile(1150)
+
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const mobileMenuHandler = () => {
+    if (!menuOpen) setMenuOpen(true)
+    else setMenuOpen(false)
+  }
+
+  useEffect(() => console.log(menuOpen), [menuOpen])
 
   return (
     <nav className={`${styles.master}`}>
@@ -61,6 +70,7 @@ const Navbar = () => {
           <FontAwesomeIcon
             className={styles.mobileMenuIcon}
             icon={faBars}
+            onClick={mobileMenuHandler}
           />
         )}
       </div>
