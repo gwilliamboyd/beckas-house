@@ -1,8 +1,11 @@
+'use client'
+import useIsMobile from '@/hooks/useIsMobile'
 import styles from '../../styles/navbar.module.css'
 import SocialIcon from '../SocialIcon'
 import NavlinkContact from './nav-links/NavlinkContact'
 
 const NavbarSocket = () => {
+  const isMobile = useIsMobile(1150)
   return (
     <div className={styles.socketMaster}>
       <div className={styles.socketWrapper}>
@@ -25,14 +28,14 @@ const NavbarSocket = () => {
               url={'https://www.facebook.com'}
               fillColor={'#FFFFFF'}
               site={'facebook'}
-              dimensions={36}
+              dimensions={isMobile ? 28 : 36}
             />
             <SocialIcon
               styles={styles}
               url={'https://www.instagram.com'}
               fillColor={'#FFFFFF'}
               site={'instagram'}
-              dimensions={36}
+              dimensions={isMobile ? 28 : 36}
             />
           </div>
         </div>

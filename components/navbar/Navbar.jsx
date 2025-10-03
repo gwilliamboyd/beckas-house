@@ -7,24 +7,10 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import useIsMobile from '@/hooks/useIsMobile'
 
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1150) // pick your breakpoint
-    }
-
-    // Run once on mount to set initial state
-    handleResize()
-
-    // Attach listener
-    window.addEventListener('resize', handleResize)
-
-    // Cleanup
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
+  const isMobile = useIsMobile(1150)
 
   return (
     <nav className={`${styles.master}`}>
@@ -34,8 +20,8 @@ const Navbar = () => {
             <Image
               className={styles.logoImage}
               src={'/beckas-house-logo.png'}
-              width={260}
-              height={120}
+              width={isMobile ? 220 : 260}
+              height={isMobile ? 102 : 120}
               alt="Becka's House logo"
             />
           </Link>
