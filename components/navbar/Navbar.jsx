@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faL } from '@fortawesome/free-solid-svg-icons'
 import useIsMobile from '@/hooks/useIsMobile'
+import MobileMenu from './nav-links/MobileMenu'
 
 const Navbar = () => {
   const isMobile = useIsMobile(1150)
@@ -71,6 +72,13 @@ const Navbar = () => {
             className={styles.mobileMenuIcon}
             icon={faBars}
             onClick={mobileMenuHandler}
+          />
+        )}
+        {menuOpen && (
+          <MobileMenu
+            menuOpen={menuOpen}
+            setMenuOpen={setMenuOpen}
+            mobileMenuHandler={mobileMenuHandler}
           />
         )}
       </div>

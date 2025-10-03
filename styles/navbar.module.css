@@ -9,6 +9,7 @@
   align-items: center;
   z-index: 5;
   padding: 1.5em 8em;
+  position: relative;
 }
 
 .socketWrapper {
@@ -31,6 +32,7 @@
   align-items: center;
   justify-content: center;
   z-index: 5;
+  /* position: fixed; */
 }
 
 .innerContainer {
@@ -112,6 +114,36 @@
 
 .mobileMenuIcon {
   font-size: 30px;
+}
+
+.mobileMenuMaster {
+  height: 100%;
+  background-color: #ffb3b0;
+  color: #000000;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.mobileMenuContainer {
+  list-style: none;
+}
+
+.mobileMenuLink,
+.xIcon {
+  padding: 2em 4em;
+}
+
+.xIcon {
+  padding: 1em;
+  text-align: right;
+}
+
+.mobileMenuLink:active {
+  background-color: #000000;
+  color: #ffb3b0;
 }
 
 /* Laptop - small */
