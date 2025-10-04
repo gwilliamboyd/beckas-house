@@ -18,6 +18,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen, mobileMenuHandler }) => {
             styles={styles}
             linkText={'About Us'}
             url={'/#about-us'}
+            mobileMenuHandler={mobileMenuHandler}
           />
         </li>
         <li className={styles.mobileMenuLink}>
@@ -25,6 +26,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen, mobileMenuHandler }) => {
             styles={styles}
             linkText={'FAQ'}
             url={'/#faq'}
+            mobileMenuHandler={mobileMenuHandler}
           />
         </li>
         <li className={styles.mobileMenuLink}>
@@ -32,6 +34,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen, mobileMenuHandler }) => {
             styles={styles}
             linkText={'Gallery'}
             url={'/gallery'}
+            mobileMenuHandler={mobileMenuHandler}
           />
         </li>
         <li className={styles.mobileMenuLink}>
@@ -39,6 +42,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen, mobileMenuHandler }) => {
             styles={styles}
             linkText={'Testimonials'}
             url={'/#testimonials'}
+            mobileMenuHandler={mobileMenuHandler}
           />
         </li>
       </ul>

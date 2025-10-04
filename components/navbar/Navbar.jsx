@@ -20,8 +20,6 @@ const Navbar = () => {
     else setMenuOpen(false)
   }
 
-  useEffect(() => console.log(menuOpen), [menuOpen])
-
   return (
     <nav className={`${styles.master}`}>
       <div className={styles.innerContainer}>

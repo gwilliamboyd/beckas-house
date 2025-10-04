@@ -4,9 +4,11 @@ const bodoni_moda = Bodoni_Moda({
   subsets: ['latin'],
 })
 
-const NavlinkMain = ({ styles, linkText, url }) => {
+const NavlinkMain = ({ styles, linkText, url, mobileMenuHandler }) => {
   return (
-    <span className={`${bodoni_moda.className} ${styles.navLinkMain}`}>
+    <span
+      className={`${bodoni_moda.className} ${styles.navLinkMain}`}
+      onClick={mobileMenuHandler}>
       <a href={url}>{linkText}</a>
     </span>
   )

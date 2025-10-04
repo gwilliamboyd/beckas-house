@@ -61,4 +61,7 @@
   .donateHeadingWrapper {
     width: 100%;
   }
+  .donateSubHeading {
+    font-size: 24px;
+  }
 }
