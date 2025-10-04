@@ -1,3 +1,5 @@
+'use client'
+import useIsMobile from '@/hooks/useIsMobile'
 import styles from '@/styles/about.module.css'
 import { Open_Sans } from 'next/font/google'
 import { Bodoni_Moda } from 'next/font/google'
@@ -15,6 +17,8 @@ const open_sans = Open_Sans({
 })
 
 const About = () => {
+  const isMobile = useIsMobile(1150)
+
   return (
     <div
       id={'about-us'}
@@ -46,21 +50,31 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className={styles.aboutImageContainer}>
+        {isMobile ? (
           <Image
             className={styles.aboutImage}
             src={'/about-us-1.png'}
-            fill
-            sizes={'100vw'}
-            style={{
-              objectFit: 'cover',
-              backgroundPosition: 'center',
-            }}
-            //   width={640}
-            //   height={395}
+            width={isMobile ? 330 : 640}
+            height={isMobile ? 221 : 395}
             alt='About Beckas House'
           />
-        </div>
+        ) : (
+          <div className={styles.aboutImageContainer}>
+            <Image
+              className={styles.aboutImage}
+              src={'/about-us-1.png'}
+              fill
+              sizes={'100vw'}
+              style={{
+                objectFit: 'cover',
+                backgroundPosition: 'center',
+              }}
+              //   width={640}
+              //   height={395}
+              alt='About Beckas House'
+            />
+          </div>
+        )}
       </div>
       <div className={`${styles.aboutInfo} ${styles.aboutInfoRev}`}>
         <div className={styles.aboutText}>
@@ -134,21 +148,31 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className={styles.aboutImageContainer}>
+        {isMobile ? (
           <Image
             className={styles.aboutImage}
             src={'/about-us-2.png'}
-            fill
-            sizes={'100vw'}
-            style={{
-              objectFit: 'cover',
-              backgroundPosition: 'center',
-            }}
-            //   width={640}
-            //   height={751}
+            width={isMobile ? 330 : 640}
+            height={isMobile ? 221 : 395}
             alt='About Beckas House'
           />
-        </div>
+        ) : (
+          <div className={styles.aboutImageContainer}>
+            <Image
+              className={styles.aboutImage}
+              src={'/about-us-2.png'}
+              fill
+              sizes={'100vw'}
+              style={{
+                objectFit: 'cover',
+                backgroundPosition: 'center',
+              }}
+              //   width={640}
+              //   height={395}
+              alt='About Beckas House'
+            />
+          </div>
+        )}
       </div>
     </div>
   )

@@ -69,3 +69,29 @@
   height: 100%;
   position: fixed;
 }
+
+@media (max-width: 1150px) {
+  .aboutMaster {
+    padding: 3em 0;
+  }
+  .aboutInfo {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutHeading {
+    margin: 0;
+    font-size: 36px;
+  }
+  .aboutSubHeading {
+    font-size: 26px;
+  }
+  .aboutImage {
+    position: relative;
+    margin-top: 2em;
+  }
+  .aboutText {
+    padding: 1em 2em 0;
+    width: 100%;
+    gap: 1.5em;
+  }
+}
