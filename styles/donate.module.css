@@ -52,3 +52,13 @@
 .donateLink:hover {
   color: #ffffff;
 }
+
+@media (max-width: 1150px) {
+  .donateMaster {
+    padding: 3em 1.5em;
+  }
+  .donateWrapper,
+  .donateHeadingWrapper {
+    width: 100%;
+  }
+}
