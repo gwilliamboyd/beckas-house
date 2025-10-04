@@ -1,7 +1,9 @@
+'use client'
 import Image from 'next/image'
 import styles from '@/styles/faq.module.css'
 import { Open_Sans } from 'next/font/google'
 import { Bodoni_Moda } from 'next/font/google'
+import useIsMobile from '@/hooks/useIsMobile'
 
 // Font imports
 const bodoni_moda = Bodoni_Moda({
@@ -22,13 +24,15 @@ const Question = ({
   paragraph,
   altText,
 }) => {
+  const isMobile = useIsMobile(1150)
+
   return (
     <div className={styles.questionContainer}>
       <div className={styles.faqImageWrapper}>
         <Image
           src={imgSrc}
-          width={558}
-          height={272}
+          width={isMobile ? 330 : 558}
+          height={isMobile ? 161 : 272}
           style={{
             objectFit: 'cover',
             objectPosition: 'center',

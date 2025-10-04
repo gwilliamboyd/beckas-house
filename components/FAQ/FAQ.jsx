@@ -1,8 +1,10 @@
+'use client'
 import Image from 'next/image'
 import styles from '@/styles/faq.module.css'
 import Question from './Question'
 import { Open_Sans } from 'next/font/google'
 import { Bodoni_Moda } from 'next/font/google'
+import useIsMobile from '@/hooks/useIsMobile'
 
 // Font imports
 const bodoni_moda = Bodoni_Moda({
@@ -16,6 +18,7 @@ const open_sans = Open_Sans({
 })
 
 const FAQ = () => {
+  const isMobile = useIsMobile(1150)
   return (
     <div
       id={'faq'}
@@ -90,8 +93,8 @@ const FAQ = () => {
         <div className={styles.faqImageWrapper}>
           <Image
             src={'/faq-4.png'}
-            width={558}
-            height={272}
+            width={isMobile ? 330 : 558}
+            height={isMobile ? 161 : 272}
             alt={'Beckas House FAQ image'}
           />
         </div>
@@ -132,14 +135,14 @@ const FAQ = () => {
         <div className={styles.faqImageWrapper}>
           <Image
             src={'/faq-5.png'}
-            width={558}
-            height={373}
+            width={isMobile ? 330 : 558}
+            height={isMobile ? 221 : 272}
             alt={'Beckas House FAQ image'}
           />
           <Image
             src={'/faq-6.png'}
-            width={558}
-            height={373}
+            width={isMobile ? 330 : 558}
+            height={isMobile ? 221 : 272}
             alt={'Beckas House FAQ image'}
           />
         </div>
