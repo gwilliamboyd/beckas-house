@@ -65,3 +65,9 @@
     font-size: 24px;
   }
 }
+
+@media (max-width: 576px) {
+  .donateMaster {
+    padding: 3em 2em;
+  }
+}

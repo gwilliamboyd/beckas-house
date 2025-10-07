@@ -82,3 +82,9 @@
     font-size: 16px;
   }
 }
+
+@media (max-width: 576px) {
+  .faqMaster {
+    padding: 3em 2em;
+  }
+}
