@@ -42,7 +42,7 @@
 }
 
 /* Tablet - portrait */
-@media (max-width: 1025px) {
+@media (max-width: 1150px) {
   .heroMaster {
     height: 600px;
   }

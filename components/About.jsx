@@ -17,7 +17,8 @@ const open_sans = Open_Sans({
 })
 
 const About = () => {
-  const isMobile = useIsMobile(1150)
+  const isTablet = useIsMobile(1150)
+  const isMobile = useIsMobile(576)
 
   return (
     <div
@@ -50,12 +51,12 @@ const About = () => {
             </p>
           </div>
         </div>
-        {isMobile ? (
+        {isMobile || isTablet ? (
           <Image
             className={styles.aboutImage}
             src={'/about-us-1.png'}
-            width={isMobile ? 330 : 640}
-            height={isMobile ? 221 : 395}
+            width={isMobile ? 330 : isTablet ? 680 : 640}
+            height={isMobile ? 221 : isTablet ? 420 : 395}
             alt='About Beckas House'
           />
         ) : (
@@ -148,12 +149,12 @@ const About = () => {
             </div>
           </div>
         </div>
-        {isMobile ? (
+        {isMobile || isTablet ? (
           <Image
             className={styles.aboutImage}
             src={'/about-us-2.png'}
-            width={isMobile ? 330 : 640}
-            height={isMobile ? 221 : 395}
+            width={isMobile ? 330 : isTablet ? 680 : 640}
+            height={isMobile ? 221 : isTablet ? 420 : 395}
             alt='About Beckas House'
           />
         ) : (
