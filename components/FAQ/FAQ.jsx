@@ -18,7 +18,9 @@ const open_sans = Open_Sans({
 })
 
 const FAQ = () => {
-  const isMobile = useIsMobile(1150)
+  const isTablet = useIsMobile(1150)
+  const isMobile = useIsMobile(576)
+
   return (
     <div
       id={'faq'}
@@ -93,8 +95,8 @@ const FAQ = () => {
         <div className={styles.faqImageWrapper}>
           <Image
             src={'/faq-4.png'}
-            width={isMobile ? 330 : 558}
-            height={isMobile ? 161 : 272}
+            width={isMobile ? 330 : isTablet ? 680 : 558}
+            height={isMobile ? 161 : isTablet ? 420 : 272}
             alt={'Beckas House FAQ image'}
           />
         </div>
@@ -135,14 +137,14 @@ const FAQ = () => {
         <div className={styles.faqImageWrapper}>
           <Image
             src={'/faq-5.png'}
-            width={isMobile ? 330 : 558}
-            height={isMobile ? 221 : 272}
+            width={isMobile ? 330 : isTablet ? 680 : 558}
+            height={isMobile ? 161 : isTablet ? 420 : 272}
             alt={'Beckas House FAQ image'}
           />
           <Image
             src={'/faq-6.png'}
-            width={isMobile ? 330 : 558}
-            height={isMobile ? 221 : 272}
+            width={isMobile ? 0 : isTablet ? 0 : 558}
+            height={isMobile ? 0 : isTablet ? 0 : 272}
             alt={'Beckas House FAQ image'}
           />
         </div>

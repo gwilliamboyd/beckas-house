@@ -24,15 +24,16 @@ const Question = ({
   paragraph,
   altText,
 }) => {
-  const isMobile = useIsMobile(1150)
+  const isTablet = useIsMobile(1150)
+  const isMobile = useIsMobile(576)
 
   return (
     <div className={styles.questionContainer}>
       <div className={styles.faqImageWrapper}>
         <Image
           src={imgSrc}
-          width={isMobile ? 330 : 558}
-          height={isMobile ? 161 : 272}
+          width={isMobile ? 330 : isTablet ? 680 : 558}
+          height={isMobile ? 161 : isTablet ? 420 : 272}
           style={{
             objectFit: 'cover',
             objectPosition: 'center',

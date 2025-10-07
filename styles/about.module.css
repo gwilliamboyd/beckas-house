@@ -74,7 +74,7 @@
 
 @media (max-width: 1150px) {
   .aboutMaster {
-    padding: 3em 1em;
+    padding: 3em 4em;
   }
   .aboutInfo {
     flex-direction: column-reverse;
