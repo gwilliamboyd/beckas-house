@@ -42,6 +42,16 @@ const Footer = () => {
           <div className={`${bodoni_moda.className} ${styles.linksWrapper}`}>
             <NavlinkMain
               styles={styles}
+              url={'/#about-us'}
+              linkText={'About Us'}
+            />
+            <NavlinkMain
+              styles={styles}
+              url={'/#faq'}
+              linkText={'FAQ'}
+            />
+            <NavlinkMain
+              styles={styles}
               url={'/gallery'}
               linkText={'Gallery'}
             />

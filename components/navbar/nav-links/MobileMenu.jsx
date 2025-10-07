@@ -41,7 +41,7 @@ const MobileMenu = ({ menuOpen, setMenuOpen, mobileMenuHandler }) => {
           <NavlinkMain
             styles={styles}
             linkText={'Testimonials'}
-            url={'/#testimonials'}
+            url={'/testimonials'}
             mobileMenuHandler={mobileMenuHandler}
           />
         </li>
