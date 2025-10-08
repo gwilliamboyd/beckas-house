@@ -23,15 +23,15 @@ const page = () => {
     })
   }
 
-  // auto scroll testimonials every 8 sec
+  /* // auto scroll testimonials every 8 sec
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1 < entries.length ? prev + 1 : 0))
-    }, 8000)
+    }, 20000)
 
     // clear interval when currentIndex changes → resets timer
     return () => clearInterval(interval)
-  }, [currentIndex, entries.length])
+  }, [currentIndex, entries.length]) */
 
   return (
     <div className={styles.testimonialsMaster}>
