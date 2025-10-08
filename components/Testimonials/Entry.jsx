@@ -14,7 +14,7 @@ const Entry = ({ index, review, name, date }) => {
       className={`${open_sans.className} ${styles.entryWrapper}`}>
       <p className={styles.entryReview}>{review}</p>
       <h4 className={styles.entryName}>{name}</h4>
-      <h5 className={styles.entryDate}>{date}</h5>
+      {/* <h5 className={styles.entryDate}>{date}</h5> */}
     </div>
   )
 }

@@ -21,7 +21,7 @@ const Testimonials = ({ currentIndex, setCurrentIndex, entries }) => {
         index={currentIndex}
         review={entries[currentIndex].review}
         name={entries[currentIndex].name}
-        date={entries[currentIndex].date}
+        // date={entries[currentIndex].date}
       />
     </>
   )
