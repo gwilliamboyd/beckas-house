@@ -1,4 +1,5 @@
 'use client'
+import { useEffect, useState } from 'react'
 import styles from '@/styles/testimonials.module.css'
 import entries from '@/components/Testimonials/entries/entries.json'
 import Testimonials from '@/components/Testimonials/Testimonials'
@@ -8,7 +9,10 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
-import { useEffect, useState } from 'react'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
+// prevent svg icons from briefly displaying largely
+config.autoAddCss = false
 
 const page = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
