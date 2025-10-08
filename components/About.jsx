@@ -65,7 +65,7 @@ const About = () => {
         {isMobile || isTablet ? (
           <Image
             className={styles.aboutImage}
-            src={'/about-us-1.png'}
+            src={'/gallery-images/becka-and-lauren.PNG'}
             width={isMobile ? 330 : isTablet ? 680 : 640}
             height={isMobile ? 221 : isTablet ? 420 : 395}
             alt='About Beckas House'
@@ -74,7 +74,7 @@ const About = () => {
           <div className={styles.aboutImageContainer}>
             <Image
               className={styles.aboutImage}
-              src={'/about-us-1.png'}
+              src={'/gallery-images/becka-and-lauren.PNG'}
               fill
               sizes={'100vw'}
               style={{
@@ -161,28 +161,48 @@ const About = () => {
           </div>
         </div>
         {isMobile || isTablet ? (
-          <Image
-            className={styles.aboutImage}
-            src={'/about-us-2.png'}
-            width={isMobile ? 330 : isTablet ? 680 : 640}
-            height={isMobile ? 221 : isTablet ? 420 : 395}
-            alt='About Beckas House'
-          />
-        ) : (
           <div className={styles.aboutImageContainer}>
             <Image
               className={styles.aboutImage}
               src={'/about-us-2.png'}
-              fill
-              sizes={'100vw'}
-              style={{
-                objectFit: 'cover',
-                backgroundPosition: 'center',
-              }}
-              //   width={640}
-              //   height={395}
+              width={isMobile ? 330 : isTablet ? 680 : 640}
+              height={isMobile ? 221 : isTablet ? 420 : 395}
               alt='About Beckas House'
             />
+            <Image
+              className={styles.aboutImage}
+              src={'/gallery-images/becka-using-microwave.PNG'}
+              width={isMobile ? 330 : isTablet ? 680 : 640}
+              height={isMobile ? 221 : isTablet ? 420 : 395}
+              alt='About Beckas House'
+            />
+          </div>
+        ) : (
+          <div className={styles.aboutImageContainer}>
+            <div className={styles.aboutImage}>
+              <Image
+                src={'/about-us-2.png'}
+                fill
+                sizes={'100vw'}
+                style={{
+                  objectFit: 'cover',
+                  backgroundPosition: 'center',
+                }}
+                alt='About Beckas House'
+              />
+            </div>
+            <div className={styles.aboutImage}>
+              <Image
+                src={'/gallery-images/becka-using-microwave.PNG'}
+                fill
+                sizes={'100vw'}
+                style={{
+                  objectFit: 'cover',
+                  backgroundPosition: 'center',
+                }}
+                alt='About Beckas House'
+              />
+            </div>
           </div>
         )}
       </div>
