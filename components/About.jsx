@@ -45,9 +45,20 @@ const About = () => {
               Becka’s House?
             </h2>
             <p className={`${open_sans.className} ${styles.aboutParagraph}`}>
-              Becka’s House is a neighborhood companion care home located in
-              Plano Texas that provides permanent supported housing for young
-              ladies with multiple disabilities.
+              Becka was born in 1997 with multiple complex medical conditions
+              and developmental disabilities. Despite a challenging prognosis,
+              her family’s mission was clear: to love and support her
+              unconditionally. Through early intervention, special education,
+              and the life-changing support of the Texas School for the Blind
+              and Visually Impaired (TSBVI), Becka flourished in a structured,
+              nurturing environment where she was empowered to grow and belong.
+              <br />
+              When no post-TSBVI housing option could provide the same level of
+              individualized care and community, her family chose to build one
+              themselves. Becka’s House was born—a loving, purpose-driven home
+              where women with disabilities live with dignity, support, and joy.
+              What began as one family’s solution has grown into a model of
+              possibility: a place not just to live, but to thrive.
             </p>
           </div>
         </div>
@@ -104,7 +115,7 @@ const About = () => {
                 <b>Optic Nerve Atrophy</b> (leaving her legally blind),{' '}
                 <b>immune thrombocytopenia (ITP)</b>, and <b>cerebral palsy</b>{' '}
                 affecting the left side of her body. Additional diagnoses
-                followed, including
+                followed, including{' '}
                 <b>
                   autism, cortical visual impairment (CVI), speech impairment,
                   auditory processing disorder
