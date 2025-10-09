@@ -69,13 +69,13 @@ const Footer = () => {
               site={'facebook'}
               dimensions={60}
             />
-            <SocialIcon
+            {/* <SocialIcon
               styles={styles}
               url={'https://www.instagram.com'}
               fillColor={'#000000'}
               site={'instagram'}
               dimensions={60}
-            />
+            /> */}
           </div>
         </div>
       </div>

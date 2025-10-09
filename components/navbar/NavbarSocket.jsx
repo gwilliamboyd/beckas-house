@@ -30,13 +30,13 @@ const NavbarSocket = () => {
               site={'facebook'}
               dimensions={isMobile ? 28 : 36}
             />
-            <SocialIcon
+            {/* <SocialIcon
               styles={styles}
               url={'https://www.instagram.com'}
               fillColor={'#FFFFFF'}
               site={'instagram'}
               dimensions={isMobile ? 28 : 36}
-            />
+            /> */}
           </div>
         </div>
       </div>
