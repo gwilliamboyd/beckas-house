@@ -64,7 +64,7 @@ const Footer = () => {
           <div className={styles.socialsWrapper}>
             <SocialIcon
               styles={styles}
-              url={'https://www.facebook.com'}
+              url={'https://www.facebook.com/beckabhouse'}
               fillColor={'#000000'}
               site={'facebook'}
               dimensions={60}

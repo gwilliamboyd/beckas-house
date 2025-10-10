@@ -25,7 +25,7 @@ const NavbarSocket = () => {
           <div className={styles.socials}>
             <SocialIcon
               styles={styles}
-              url={'https://www.facebook.com'}
+              url={'https://www.facebook.com/beckabhouse'}
               fillColor={'#FFFFFF'}
               site={'facebook'}
               dimensions={isMobile ? 28 : 36}
