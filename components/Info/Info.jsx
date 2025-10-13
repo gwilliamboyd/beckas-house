@@ -1,18 +1,43 @@
 import styles from '@/styles/info.module.css'
 import InfoQuestion from './InfoQuestion'
+import { Open_Sans } from 'next/font/google'
+
+const open_sans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 const Info = () => {
   return (
     <div className={styles.infoMaster}>
       <h2 className={styles.infoHeading}>FAQ</h2>
-      <InfoQuestion
+      {/* <InfoQuestion
         heading={
           'How can I apply for our loved one to become a resident at Becka’s House?'
         }
-        paragraph={
-          'Currently, we do not have an opening, but you are welcome to be placed on our waitlist by calling or emailing us. Click here for details regarding consulting services available to help you design a beautiful future for your loved one, including other residential resources.'
-        }
-      />
+        paragraph={`Currently, we do not have an opening, but you are welcome to be placed on our waitlist by calling or emailing us. Click ${(
+          <a href='https://kmresidentialsolutions.com/'>here</a>
+        )} for details regarding consulting services available to help you design a beautiful future for your loved one, including other residential resources.`}
+      /> */}
+      <div className={`${open_sans.className} ${styles.infoQuestion}`}>
+        <h4 className={styles.infoQuestionHeading}>
+          How can I apply for our loved one to become a resident at Becka’s
+          House?
+        </h4>
+        <p className={styles.infoQuestionParagraph}>
+          Currently, we do not have an opening, but you are welcome to be placed
+          on our waitlist by calling or emailing us. Click{' '}
+          <a
+            href='https://kmresidentialsolutions.com/'
+            target='_blank'
+            style={{ color: '#78be99' }}>
+            here
+          </a>{' '}
+          for details regarding consulting services available to help you design
+          a beautiful future for your loved one, including other residential
+          resources.
+        </p>
+      </div>
       <InfoQuestion
         heading={'What is the monthly cost to be a resident at Becka’s House?'}
         paragraph={
